@@ -1,17 +1,38 @@
+// // ........PROPS IN REACT JS.......
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import Cards from './Card';
+// import Sdata from './Sdata';
+
+
+
+// ReactDOM.render(
+//   <>
+//     <h2>List of best netflix series</h2>
+//     {Sdata.map(function ncards(val) {
+//       return (
+//         <Cards
+//           sname={val.sname}
+//           imgsrc={val.imgscr}
+//           title={val.title}
+//           links={val.links}
+//         />
+      
+//       );
+//     })}
+
+//   </>,
+//   document.getElementById("root")
+// );
+
+
+// ***************USE STATE HOOKES IN REACT JS************
+
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import IncDec from './IncDec';
+import RegistrationForm from './Form/RegistrationForm';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<RegistrationForm/>,document.getElementById("root"));
